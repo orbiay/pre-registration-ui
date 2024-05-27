@@ -349,6 +349,8 @@ export class DemographicComponent
         //console.log(response);
         // this.identityData = response["identity"];
         // this.locationHeirarchy = [...response["locationHierarchy"]];
+
+//         console.log(response["response"]);
         this.identityData = response["response"]["idSchema"]["identity"];
         let locationHeirarchiesFromJson = [
           ...response["response"]["idSchema"]["locationHierarchy"],
